@@ -395,13 +395,15 @@
                     <label class="block text-sm font-semibold text-morandi-700 mb-2">
                         出席人數 <span class="font-en text-xs text-morandi-400 font-normal uppercase ml-1">ATTENDEES</span>
                     </label>
-                    <select name="entry.476221323" class="custom-input">
-                        <option value="0">0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
+                    <select name="entry.476221323" class="custom-input" required>
+                    <option value="" disabled selected>請選擇出席人數</option>
+                    <option value="0">0 人（無法出席）</option>
+                    <option value="1">1 人</option>
+                    <option value="2">2 人</option>
+                    <option value="3">3 人</option>
+                    <option value="4">4 人</option>
+                    <option value="5">5 人</option>
+                        
                     </select>
                 </div>
 
