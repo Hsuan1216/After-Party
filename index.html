@@ -404,13 +404,26 @@
                     </select>
                 </div>
 
-                <!-- 4. 飲食需求與備註 DIETARY (簡化單一欄位，避免架構衝突) -->
-                <div>
-                    <label class="block text-sm font-semibold text-morandi-700 mb-2">
-                        飲食需求與備註 <span class="font-en text-xs text-morandi-400 font-normal uppercase ml-1">DIETARY NOTES</span>
-                    </label>
-                    <input type="text" name="entry.1630293158" class="custom-input" placeholder="例如：葷食、1葷1素、蛋奶素等">
+                 <!-- 4. 飲食需求 DIETARY -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-semibold text-morandi-700 mb-2">
+                            飲食需求 <span class="font-en text-xs text-morandi-400 font-normal uppercase ml-1">DIETARY</span>
+                        </label>
+                        <select name="entry.1630293158" class="custom-input">
+                            <option value="葷">葷</option>
+                            <option value="素">素</option>
+                            <option value="__other_option__">其他</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-morandi-700 mb-2">
+                            飲食需求備註 <span class="font-en text-xs text-morandi-400 font-normal uppercase ml-1">DIETARY NOTE</span>
+                        </label>
+                        <input type="text" name="entry.1630293158.other_option_response" class="custom-input" placeholder="例如：1葷1素、蛋奶素等">
+                    </div>
                 </div>
+
 
                 <!-- 5. 對於新郎(信嘉)的第一印象? -->
                 <div>
