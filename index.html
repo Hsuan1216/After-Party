@@ -322,32 +322,52 @@
                     <p class="text-xs sm:text-sm text-morandi-500 mt-2">誠摯邀請您出席我們的結婚喜宴與 Party 派對</p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                    <div class="p-5 rounded-2xl bg-cream-50 border border-morandi-100/80 flex items-start space-x-4">
-                        <div class="p-3 rounded-xl bg-morandi-200/60 text-morandi-600">
-                            <i class="fa-regular fa-calendar-check text-xl"></i>
-                        </div>
-                        <div class="grid grid-cols-2 gap-y-6 gap-x-4">
-                        <!-- 左上：日期與時間 -->
-                        <div>
-                        <h4 class="font-medium text-morandi-700 text-sm">日期與時間 DATE & TIME</h4>
-     <p class="text-sm font-semibold text-morandi-800 mt-1 no-wrap">2026 年 12 月 12 日 (星期六)</p>
-    <p class="text-xs text-morandi-500 mt-0.5 no-wrap">18:00 準時開始</p>
+               <!-- 外部卡片容器 -->
+<div class="w-full bg-white/60 p-6 rounded-2xl shadow-sm border border-morandi-100">
+  
+  <!-- 上方：左右雙欄 (日期時間 / 宴客地點) -->
+  <div class="grid grid-cols-2 gap-6 pb-4 border-b border-morandi-200/60">
+    
+    <!-- 左上：日期與時間 -->
+    <div class="flex items-start gap-3">
+      <div class="p-2.5 bg-morandi-100/60 rounded-xl shrink-0">
+        <!-- 日曆 Icon -->
+        <svg class="w-5 h-5 text-morandi-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">日期與時間 DATE & TIME</h4>
+        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">2026 年 12 月 12 日 (星期六)</p>
+        <p class="text-xs text-morandi-500 mt-0.5">18:00 準時開始</p>
+      </div>
+    </div>
+
+    <!-- 右上：宴客地點 -->
+    <div class="flex items-start gap-3">
+      <div class="p-2.5 bg-morandi-100/60 rounded-xl shrink-0">
+        <!-- 地標 Icon -->
+        <svg class="w-5 h-5 text-morandi-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">宴客地點 VENUE</h4>
+        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">十鼓文創園區_糖BAR</p>
+        <p class="text-xs text-morandi-500 mt-0.5">臺南市仁德區成功里文華路二段326號</p>
+      </div>
+    </div>
+
   </div>
 
-  <!-- 右上：宴客地點 -->
-  <div>
-    <h4 class="font-medium text-morandi-700 text-sm">宴客地點 VENUE</h4>
-    <p class="text-sm font-semibold text-morandi-800 mt-1 no-wrap">十鼓文創園區_糖BAR</p>
-    <p class="text-xs text-morandi-500 mt-0.5 no-wrap">臺南市仁德區成功里文華路二段326號</p>
-  </div>
-
-  <!-- 下方：建議攜帶物品（跨兩欄、放大、置中） -->
-  <div class="col-span-2 text-center border-t border-morandi-200/50 pt-4 mt-2">
-    <h4 class="font-medium text-morandi-700 text-base">建議攜帶物品 Recommended to bring</h4>
+  <!-- 下方：建議攜帶物品 (放大置中) -->
+  <div class="pt-4 text-center">
+    <h4 class="font-medium text-morandi-700 text-sm tracking-wide">建議攜帶物品 Recommended to bring</h4>
     <p class="text-base font-bold text-morandi-800 mt-1.5">如想增加遊戲體驗</p>
     <p class="text-sm font-bold text-red-600 mt-1">請使出您的鈔能力，攜帶足夠的百鈔!!</p>
   </div>
+
 </div>
                 </div>
             </div>
