@@ -322,11 +322,11 @@
                     <p class="text-xs sm:text-sm text-morandi-500 mt-2">誠摯邀請您出席我們的結婚喜宴與 Party 派對</p>
                 </div>
 
-               <!-- 外部卡片容器 -->
-<div class="w-full bg-white/60 p-6 rounded-2xl shadow-sm border border-morandi-100">
+              <!-- 外部卡片容器 -->
+<div class="w-full bg-white/60 p-5 sm:p-6 rounded-2xl shadow-sm border border-morandi-100">
   
-  <!-- 上方：左右雙欄 (日期時間 / 宴客地點) -->
-  <div class="grid grid-cols-2 gap-6 pb-4 border-b border-morandi-200/60">
+  <!-- 上方：響應式雙欄 (手機單欄 grid-cols-1 / 平板桌面雙欄 sm:grid-cols-2) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 pb-5 border-b border-morandi-200/60">
     
     <!-- 左上：日期與時間 -->
     <div class="flex items-start gap-3">
@@ -336,9 +336,9 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
         </svg>
       </div>
-      <div>
+      <div class="min-w-0 flex-1">
         <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">日期與時間 DATE & TIME</h4>
-        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">2026 年 12 月 12 日 (星期六)</p>
+        <p class="text-sm font-semibold text-morandi-800 mt-1">2026 年 12 月 12 日 (星期六)</p>
         <p class="text-xs text-morandi-500 mt-0.5">18:00 準時開始</p>
       </div>
     </div>
@@ -352,22 +352,29 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
         </svg>
       </div>
-      <div>
+      <div class="min-w-0 flex-1">
         <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">宴客地點 VENUE</h4>
-        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">十鼓文創園區_糖BAR</p>
-        <p class="text-xs text-morandi-500 mt-0.5">臺南市仁德區成功里文華路二段326號</p>
+        <p class="text-sm font-semibold text-morandi-800 mt-1">十鼓文創園區_糖BAR</p>
+        <p class="text-xs text-morandi-500 mt-0.5 break-words">臺南市仁德區成功里文華路二段326號</p>
       </div>
     </div>
 
   </div>
 
   <!-- 下方：建議攜帶物品 (放大置中) -->
-  <div class="pt-4 text-center">
-    <h4 class="font-medium text-morandi-700 text-sm tracking-wide">建議攜帶物品 Recommended to bring</h4>
-    <p class="text-base font-bold text-morandi-800 mt-1.5">如想增加遊戲體驗</p>
+  <div class="pt-5 text-center">
+    <h4 class="inline-flex items-center justify-center gap-1.5 font-medium text-morandi-700 text-sm tracking-wide">
+      <!-- 紅色星芒符號 -->
+      <svg class="w-4 h-4 text-red-500 fill-current shrink-0" viewBox="0 0 24 24">
+        <path d="M12 0L14.59 9.41L24 12L14.59 14.59L12 24L9.41 14.59L0 12L9.41 9.41L12 0Z" />
+      </svg>
+      <span>建議攜帶物品 Recommended to bring</span>
+    </h4>
+    <p class="text-base font-bold text-morandi-800 mt-2">如想增加遊戲體驗</p>
     <p class="text-sm font-bold text-red-600 mt-1">請使出您的鈔能力，攜帶足夠的百鈔!!</p>
   </div>
 
+</div>
 </div>
                 </div>
             </div>
