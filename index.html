@@ -322,152 +322,53 @@
                     <p class="text-xs sm:text-sm text-morandi-500 mt-2">誠摯邀請您出席我們的結婚喜宴與 Party 派對</p>
                 </div>
 
-               <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wedding Invitation Card - Hsin & Hsuan</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Noto Serif TC & Inter -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Serif+TC:wght@400;600;700&display=swap" rel="stylesheet">
+               <!-- 外部卡片容器 -->
+<div class="w-full bg-white/60 p-6 rounded-2xl shadow-sm border border-morandi-100">
   
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            morandi: {
-              50: '#f9f8f6',
-              100: '#f2efea',
-              200: '#e5e0d8',
-              300: '#d5ccc0',
-              400: '#beaf9f',
-              500: '#a3907c',
-              600: '#8c7763',
-              700: '#6e5a49',
-              800: '#4e3e31',
-              900: '#342920',
-            }
-          },
-          fontFamily: {
-            serif: ['"Noto Serif TC"', 'serif'],
-            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-[#f7f5f0] text-morandi-800 font-sans min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-10">
-
-  <!-- 喜帖卡片主體容器 -->
-  <div class="w-full max-w-3xl bg-white/85 backdrop-blur-md rounded-3xl p-6 sm:p-8 md:p-12 shadow-xl shadow-morandi-900/5 border border-white/80 relative overflow-hidden">
+  <!-- 上方：左右雙欄 (日期時間 / 宴客地點) -->
+  <div class="grid grid-cols-2 gap-6 pb-4 border-b border-morandi-200/60">
     
-    <!-- 頂部裝飾標籤與主標題 -->
-    <div class="text-center mb-8 md:mb-10">
-      <span class="inline-block px-4 py-1 bg-morandi-100 text-morandi-600 rounded-full text-xs tracking-widest font-medium uppercase mb-3 border border-morandi-200/50">
-        INVITATION CARD
-      </span>
-      <h1 class="font-serif text-2xl sm:text-3xl md:text-4xl text-morandi-800 font-semibold tracking-wide">
-        Hsin & Hsuan Wedding Banquet
-      </h1>
-      <p class="text-xs sm:text-sm text-morandi-500 mt-2 tracking-wider font-normal">
-        誠摯邀請您出席我們的結婚喜宴與 Party 派對
-      </p>
-      
-      <!-- 典雅分隔線 -->
-      <div class="w-16 h-[1px] bg-morandi-300 mx-auto mt-6"></div>
-    </div>
-
-    <!-- 資訊網格區域：手機版單欄 (grid-cols-1) / 電腦版雙欄 (md:grid-cols-2) -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-      
-      <!-- 卡片 1：日期與時間 (左上) -->
-      <div class="bg-morandi-50/80 p-4 sm:p-5 rounded-2xl border border-morandi-100/80 flex items-start gap-3.5 transition-all">
+    <!-- 左上：日期與時間 -->
+    <div class="flex items-start gap-3">
+      <div class="p-2.5 bg-morandi-100/60 rounded-xl shrink-0">
         <!-- 日曆 Icon -->
-        <div class="p-2.5 bg-white text-morandi-700 rounded-xl shadow-sm shrink-0 mt-0.5 border border-morandi-100">
-          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-          </svg>
-        </div>
-        <div class="min-w-0 flex-1">
-          <h4 class="font-medium text-morandi-600 text-xs tracking-wider uppercase">
-            日期與時間 DATE & TIME
-          </h4>
-          <p class="text-sm sm:text-base font-semibold text-morandi-800 mt-1 break-words">
-            2026 年 12 月 12 日 (星期六)
-          </p>
-          <p class="text-xs sm:text-sm text-morandi-500 mt-0.5">
-            18:00 準時開始
-          </p>
-        </div>
+        <svg class="w-5 h-5 text-morandi-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+        </svg>
       </div>
-
-      <!-- 卡片 2：宴客地點 (右上) -->
-      <div class="bg-morandi-50/80 p-4 sm:p-5 rounded-2xl border border-morandi-100/80 flex items-start gap-3.5 transition-all">
-        <!-- 地標 Icon -->
-        <div class="p-2.5 bg-white text-morandi-700 rounded-xl shadow-sm shrink-0 mt-0.5 border border-morandi-100">
-          <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-          </svg>
-        </div>
-        <div class="min-w-0 flex-1">
-          <h4 class="font-medium text-morandi-600 text-xs tracking-wider uppercase">
-            宴客地點 VENUE
-          </h4>
-          <p class="text-sm sm:text-base font-semibold text-morandi-800 mt-1 break-words">
-            十鼓文創園區_糖BAR
-          </p>
-          <p class="text-xs sm:text-sm text-morandi-500 mt-0.5 leading-relaxed break-words">
-            臺南市仁德區成功里文華路二段326號
-          </p>
-        </div>
+      <div>
+        <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">日期與時間 DATE & TIME</h4>
+        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">2026 年 12 月 12 日 (星期六)</p>
+        <p class="text-xs text-morandi-500 mt-0.5">18:00 準時開始</p>
       </div>
-
-      <!-- 卡片 3：建議攜帶物品 (電腦版跨欄 md:col-span-2，放大置中) -->
-      <div class="md:col-span-2 bg-gradient-to-b from-morandi-50/90 to-morandi-100/50 p-5 sm:p-7 rounded-2xl border border-morandi-200/70 text-center mt-1 sm:mt-2 shadow-inner">
-        
-        <!-- 標題帶典雅星芒徽章 Badge -->
-        <div class="flex items-center justify-center gap-2.5">
-          <!-- 典雅星芒徽章 (Solid Red Circle with Golden/White Sparkle Star) -->
-          <span class="w-6 h-6 bg-gradient-to-tr from-red-600 to-rose-500 text-amber-100 rounded-full shadow-sm inline-flex items-center justify-center shrink-0 ring-2 ring-rose-100">
-            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2l2.4 6.6 7.1.3-5.5 4.6 1.8 6.9-5.8-3.9-5.8 3.9 1.8-6.9-5.5-4.6 7.1-.3z"/>
-            </svg>
-          </span>
-
-          <h4 class="font-medium text-morandi-700 text-xs sm:text-sm tracking-widest uppercase">
-            建議攜帶物品 Recommended to bring
-          </h4>
-        </div>
-
-        <!-- 說明內文 -->
-        <p class="text-base sm:text-lg font-bold text-morandi-800 mt-2.5 sm:mt-3">
-          如想增加遊戲體驗
-        </p>
-        <p class="text-sm sm:text-base font-extrabold text-red-600 mt-1 sm:mt-1.5 leading-relaxed tracking-wide">
-          請使出您的鈔能力，攜帶足夠的百鈔!!
-        </p>
-      </div>
-
     </div>
 
-    <!-- 底部裝飾小文字 -->
-    <div class="mt-8 md:mt-10 text-center">
-      <p class="text-[10px] sm:text-xs text-morandi-400 tracking-widest uppercase">
-        Looking forward to celebrating with you
-      </p>
+    <!-- 右上：宴客地點 -->
+    <div class="flex items-start gap-3">
+      <div class="p-2.5 bg-morandi-100/60 rounded-xl shrink-0">
+        <!-- 地標 Icon -->
+        <svg class="w-5 h-5 text-morandi-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+        </svg>
+      </div>
+      <div>
+        <h4 class="font-medium text-morandi-700 text-xs tracking-wider uppercase">宴客地點 VENUE</h4>
+        <p class="text-sm font-semibold text-morandi-800 mt-1 whitespace-nowrap">十鼓文創園區_糖BAR</p>
+        <p class="text-xs text-morandi-500 mt-0.5">臺南市仁德區成功里文華路二段326號</p>
+      </div>
     </div>
 
   </div>
 
-</body>
-</html>
+  <!-- 下方：建議攜帶物品 (放大置中) -->
+  <div class="pt-4 text-center">
+    <h4 class="font-medium text-morandi-700 text-sm tracking-wide">建議攜帶物品 Recommended to bring</h4>
+    <p class="text-base font-bold text-morandi-800 mt-1.5">如想增加遊戲體驗</p>
+    <p class="text-sm font-bold text-red-600 mt-1">請使出您的鈔能力，攜帶足夠的百鈔!!</p>
+  </div>
+
+</div>
                 </div>
             </div>
         </div>
